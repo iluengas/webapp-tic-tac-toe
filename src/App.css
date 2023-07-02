@@ -1,0 +1,177 @@
+.square {
+  width: 200px; /* Adjust this value to your desired size */
+  height: 200px; /* Adjust this value to your desired size */
+  text-align: center;
+  background-color: black;
+  font-size: 40px;
+  vertical-align: top;
+  color: white;
+}
+.square:hover {
+  background-color: #0D0907;
+}
+.status {
+  font-size: 40px;
+  font-weight: bold;
+  color: blue;
+  background-color: lightblue; /* Add a background color */
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 300px;
+  height: 100px;
+  padding: 20px; /* Increase the padding for more spacing */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Add a smooth transition effect */
+}
+
+.status:hover {
+  background-color: red; /* Change the background color on hover */
+  color: white;
+}
+
+
+@keyframes shine {
+  0% {
+    border-color: #111111;
+  }
+  50% {
+    border-color: #FFFFFF;
+  }
+  100% {
+    border-color: #111111;
+  }
+}
+
+.game-board {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  border-width: 5px;
+  border-color: #111111;
+  border-style: solid;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+}
+
+.game-board:hover {
+  animation: wiggle 0.5s ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+
+@keyframes wiggle {
+  0% { transform: rotate(0); }
+  25% { transform: rotate(1deg); }
+  50% { transform: rotate(-1deg); }
+  75% { transform: rotate(1deg); }
+  100% { transform: rotate(0); }
+}
+
+.status-container {
+  display: flex; /* Enable flexbox */
+  align-items: center;
+  padding: 200px;
+}
+
+.dash-board {
+  display: flex; /* Enable flexbox */
+  flex-direction: row; /* Arrange children in a row */
+  height: 60px;
+  background-color: #18191A;
+  display: flex; /* Enable flexbox */
+  align-items: center;
+  padding: 20px;
+}
+.dash-board > div:not(:last-child) {
+  margin-right: 5px; /* Add margin-right to create space between row divs */
+}
+
+.parent {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+.parent > div:not(:last-child) {
+  margin-bottom: 20px; /* Add margin-right to create space between row divs */
+}
+
+.text {
+  color: white;
+  font-weight: bold;
+  font-size: 32px;
+}
+.text2 {
+  color: black;
+  font-weight: bold;
+  font-size: 32px;
+  border-radius: 5px;
+  background-color: red;
+  padding: 5px;
+}
+
+.text2:hover {
+  animation: roll 3s linear infinite;
+}
+@keyframes roll {
+  0% {
+     transform:rotate(0deg);
+  }
+  5% {
+     transform:rotate(12deg);
+  }
+  10% {
+     transform:rotate(22.5deg);
+  }
+  20% {
+     transform:rotate(38.5deg);
+  }
+  25% {
+     transform:rotate(45deg);
+  }
+  34% {
+     transform:rotate(60deg);
+  }
+  38% {
+     transform:rotate(80deg);
+  }
+  40%,
+  100% {
+     transform:rotate(90deg);
+  }
+}
+
+
+.text3 {
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.game-board-container {
+  padding: 30px;
+}
+
+.header {
+  padding-left: 30px;
+  padding-bottom: 0px;
+}
+
